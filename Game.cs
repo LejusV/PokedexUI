@@ -28,18 +28,10 @@ namespace GUI
             }
         }
 
-        protected Button btnStartGame = new MainMenuButton(); //520; 340
-
         public Game()
         {
             InitializeComponent();
 
-            btnStartGame.Left = 520;
-            btnStartGame.Top = 340;
-            btnStartGame.Text = "Start Game";
-
-            picClouds.Left = 0;
-            picClouds2.Left = -1274;
         }
 
         private void StartGame(object sender, EventArgs e)
@@ -52,10 +44,6 @@ namespace GUI
             picClouds.Visible = true;
             AnimClouds();
             MainGame();
-        }
-        private void OnFrameChanged(object sender, EventArgs e)
-        {
-            // frame change
         }
 
         private async void AnimClouds()
