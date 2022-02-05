@@ -124,8 +124,14 @@
   <data name="pokemon landscape" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pokemon landscape.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="no_clouds_sky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no_clouds_sky.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="clouds" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clouds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="no_clouds_sky1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no_clouds_sky1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2560px-International_Pokémon_logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2560px-International_Pokémon_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -137,6 +143,6 @@
     <value>..\Resources\2560px-International_Pokémon_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_clouds_sky" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\no_clouds_sky.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\no_clouds_sky1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

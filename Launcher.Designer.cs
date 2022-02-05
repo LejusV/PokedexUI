@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Launcher));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.Button();
@@ -35,6 +36,7 @@
             this.LoadingStatusBar = new System.Windows.Forms.ToolStripStatusLabel();
             this.LoadingProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.LoadingTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -106,6 +108,12 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
+            // LoadingTimer
+            // 
+            this.LoadingTimer.Enabled = true;
+            this.LoadingTimer.Interval = 10;
+            this.LoadingTimer.Tick += new System.EventHandler(this.LoadingTick);
+            // 
             // Launcher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -137,5 +145,6 @@
         private System.Windows.Forms.ToolStripStatusLabel LoadingStatusBar;
         private System.Windows.Forms.ToolStripProgressBar LoadingProgressBar;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Timer LoadingTimer;
     }
 }

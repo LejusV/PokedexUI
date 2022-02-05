@@ -123,6 +123,16 @@ namespace GUI.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap no_clouds_sky1 {
+            get {
+                object obj = ResourceManager.GetObject("no_clouds_sky1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pokemon_landscape {
             get {
                 object obj = ResourceManager.GetObject("pokemon landscape", resourceCulture);

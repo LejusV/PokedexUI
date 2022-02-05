@@ -16,9 +16,8 @@ namespace GUI
         {
             InitializeComponent(); LoadingStatusBar.Text = "Loading";
             LoadingProgressBar.Value = 0;
-            long loading = 0;
-            while (loading++ < 2000000) LoadingProgressBar.Value = (int)(loading / 20000);
-            LoadingStatusBar.Text = "Complete";
+            btnPlay.Enabled = false;
+            LoadingTimer.Start();
         }
 
         private void LaunchGame(object sender, EventArgs e)
@@ -27,6 +26,20 @@ namespace GUI
             Game game = new Game();
             game.ShowDialog();
             this.Close();
+        }
+
+        int percentage = 0;
+
+        private void LoadingTick(object sender, EventArgs e)
+        {
+            LoadingProgressBar.Value = percentage++;
+
+            if (LoadingProgressBar.Value >= 100)
+            {
+                LoadingTimer.Stop();
+                LoadingStatusBar.Text = "Complete";
+                btnPlay.Enabled = true;
+            }
         }
     }
 }

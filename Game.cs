@@ -12,10 +12,24 @@ namespace GUI
 {
     public partial class Game : Form
     {
+        private List<string> lines = new List<string>()
+        {
+            "Welcome to Pokedex, a little game developped by LejusVDP for a private usage.",
+            "For now the game concept resides in pokemon 1v1 battles",
+            "What is your Trainer Name ? ",
+            "aaaaaaaaaaaaaaaaaa",
+            "bbbbbbbbbbbbbbb",
+            "cccccccccccccccc",
+            "ddddddddd dddddddd d dddddddd   ddd",
+            "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+            "f f f f f f f f f f f f f f f f"
+        };
+
         private int line = 0;
 
         class MainMenuButton : Button
         {
+
             public MainMenuButton() : base()
             {
                 this.Left = 0;
@@ -36,25 +50,17 @@ namespace GUI
 
         private void StartGame(object sender, EventArgs e)
         {
-            btnStartGame.Visible = false;
-            btnSettings.Visible = false;
-            btnExit.Visible = false;
-            lblMainMenu.Visible = false;
-            this.BackgroundImage = Properties.Resources.no_clouds_sky;
-            picClouds.Visible = true;
-            AnimClouds();
-            MainGame();
+            MainMenu.Visible = false;
+            MainGame.Visible = true;
+            GameMain();
         }
 
-        private async void AnimClouds()
+        private void AnimClouds(object sender, EventArgs e)
         {
-            while (true)
+            anim_clouds.Left += 5;
+            if (anim_clouds.Left > -8)
             {
-                await Task.Delay(3);
-                picClouds.Left += 10;
-                picClouds2.Left += 10;
-                if (picClouds.Left > 1274) picClouds.Left -= picClouds.Width + picClouds2.Width;
-                if (picClouds2.Left > 1274) picClouds2.Left -= picClouds.Width + picClouds2.Width;
+                anim_clouds.Left -= 1290;
             }
         }
 
@@ -62,34 +68,32 @@ namespace GUI
         {
         }
 
-        private void MainGame()
+        private void GameMain()
         {
 
-            bool isWaitingForNextLine = false;
-
-            
-
-            List<string> lines = new List<string>()
-            {
-                "Welcome to Pokedex, a little game developped by LejusVDP for a private usage.",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            };
-            SpeakerLines.Text = lines[0];
+            SpeakerLines.Text = lines[line];
             LinesDisplayArea.Visible = true;
-            isWaitingForNextLine = true;
-            SpeakerLines.Text = "What is your Trainer Name ? ";
-
-            isWaitingForNextLine = true;
-
-
         }
+
+        int charIndex = 0;
+
+        async void LineIncrement(object sender, EventArgs e)
+        {
+            if (charIndex == lines[line].Length || charIndex == 0)
+            {
+                if (++line < lines.Count)
+                {
+                    SpeakerLines.Text = "";
+                    for (charIndex = 0; charIndex < lines[line].Length; charIndex++)
+                    {
+                        await Task.Delay(20);
+                        SpeakerLines.Text += lines[line][charIndex];
+                    }
+                    lblNextLine.Visible = false;
+                }
+            }
+        }
+
 
         private void ExitGame(object sender, EventArgs e)
         {
@@ -97,6 +101,11 @@ namespace GUI
             Launcher launcher = new Launcher();
             launcher.ShowDialog();
             this.Close();
+        }
+
+        private void NextLineLabelDisplay(object sender, EventArgs e)
+        {
+            lblNextLine.Visible = true;
         }
     }
 }
