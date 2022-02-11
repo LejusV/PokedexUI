@@ -117,35 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="1920x1200_px_nature_pokemon-1004643" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1920x1200_px_nature_pokemon-1004643.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pokemon landscape" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pokemon landscape.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="battle_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\battle_background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="no_clouds_sky" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\no_clouds_sky1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clouds" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clouds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="no_clouds_sky1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\no_clouds_sky1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2560px-International_Pokémon_logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2560px-International_Pokémon_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="forestPokemon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\forestPokemon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2560px-International_Pokémon_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2560px-International_Pokémon_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Spr_b_5b_025_m" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Spr_b_5b_025_m.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

@@ -1,5 +1,4 @@
-﻿using GUI.LauncherScenes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,17 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI
+namespace GUI.GameScenes
 {
-    public partial class Launcher : Form
+    public partial class BattleScene : UserControl
     {
-        public Launcher()
+        public BattleScene()
         {
             InitializeComponent();
-            LauncherMenu launcherMenu = new LauncherMenu();
-            this.Controls.Add(launcherMenu);
         }
-
-
     }
 }

@@ -93,6 +93,16 @@ namespace GUI.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap battle_background {
+            get {
+                object obj = ResourceManager.GetObject("battle_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clouds {
             get {
                 object obj = ResourceManager.GetObject("clouds", resourceCulture);
@@ -136,6 +146,16 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap pokemon_landscape {
             get {
                 object obj = ResourceManager.GetObject("pokemon landscape", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Spr_b_5b_025_m {
+            get {
+                object obj = ResourceManager.GetObject("Spr_b_5b_025_m", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
